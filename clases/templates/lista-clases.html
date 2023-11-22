@@ -1,0 +1,40 @@
+{% extends "template-base.html" %}
+
+{% block title %}Lista Clases{% endblock %}
+
+{% block content %}
+<div class="table">
+    <h3>Clases</h3>
+    <a href="#">Agregar clase</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Fecha</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Introducción a la programación con Python</td>
+                <td>01/12/2023</td>
+                <td>Aprende los conceptos básicos de la programación con Python, uno de los lenguajes más populares y versátiles del mundo.</td>
+                <td>
+                    <a href="#">Editar clase</a>
+                    <a href="#">Eliminar clase</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Fundamentos de diseño web con HTML y CSS</td>
+                <td>15/12/2023</td>
+                <td>Aprende a crear sitios web con HTML y CSS, los lenguajes fundamentales de la web.</td>
+                <td>
+                    <a href="#">Editar clase</a>
+                    <a href="#">Eliminar clase</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

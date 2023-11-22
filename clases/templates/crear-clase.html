@@ -1,0 +1,16 @@
+{% extends "template-base.html" %}
+
+{% block title %}Crear clase{% endblock %}
+
+{% block content %}
+<div class="form">
+    <h3>Editar clase</h3>
+    <p>Completa el siguiente formulario para editar una clase.</p>
+    <form method="post">
+        <input type="text" name="nombre" placeholder="Nombre del clase" required>
+        <input type="date" name="fecha" placeholder="Fecha del clase" required>
+        <textarea name="descripcion" placeholder="Descripción del clase" rows="5" required></textarea>
+        <button type="submit">Crear clase</button>
+    </form>
+</div>
+{% endblock %}

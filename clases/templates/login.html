@@ -1,0 +1,15 @@
+{% extends "template-base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="form">
+    <h3>Iniciar sesión</h3>
+    <p>Ingresa tu email y contraseña para acceder al sistema.</p>
+    <form method="post">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Iniciar sesión</button>
+    </form>
+</div>
+{% endblock %}
